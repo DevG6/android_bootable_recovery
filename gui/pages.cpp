@@ -755,10 +755,12 @@ int PageSet::Load(LoadingContext& ctx, const std::string& filename)
 	if (child)
 		LoadVariables(child);
 
+/*
 	LOGINFO("Loading mouse cursor...\n");
 	child = root->first_node("mousecursor");
 	if (child)
 		PageManager::LoadCursorData(child);
+*/
 
 	LOGINFO("Loading pages...\n");
 	child = root->first_node("templates");
